@@ -7,5 +7,5 @@ public:
         }
         return ans;
         
-    }
+    }//xor of same numbers is 0...xor of a number and 0 is number
 };
