@@ -4,19 +4,22 @@ public:
         int row=matrix.size();
         int col=matrix[0].size();
         
-        //indexis..
-        int rowIndx=0;
-        int colIndx=col-1;
-
-        while(rowIndx < row and colIndx >= 0){
-             int element=matrix[rowIndx][colIndx];
-             if(element==target)
-             return true;
-             else if(element < target)
-               rowIndx++;
-               else
-               colIndx--;
+        int rowInd=0;
+        int colInd=col-1;
+        
+        while(rowInd<row && colInd>=0){
+            
+            int element=matrix[rowInd][colInd];
+            if(element==target){
+                return 1;
+            }
+            else if(element<target){
+                rowInd++;
+            }
+            else{
+                colInd--;
+            }
         }
-        return false;
+        return 0;
     }
 };
