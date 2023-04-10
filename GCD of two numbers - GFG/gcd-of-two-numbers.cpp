@@ -25,7 +25,7 @@ class Solution
 	            B=B-A;
 	        }
 	    }
-	    return A;
+	    return B;
 	      
 	} 
 };
