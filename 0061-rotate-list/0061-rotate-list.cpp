@@ -20,7 +20,7 @@ public:
             cnt++;
         }
        
-        
+        if(k>=cnt)
             k=k%cnt;
         
         if(k==0)
